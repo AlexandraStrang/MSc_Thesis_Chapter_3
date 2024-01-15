@@ -5,4 +5,7 @@ A chapter belonging to my Master's Thesis submitted for the degree Master of Sci
 This chapter explored the use of Very High-Resolution satellite imagery (VHR) for monitoring Adelie penguin populations in the Ross Sea region of Antarctica. 
 
 ## Contains:
-Etc
+Code for completing analysis in (INSERT PAPER CITATION) 
+
+## Contact:
+alexandra.strang@pg.canterbury.ac.nz with any questions
