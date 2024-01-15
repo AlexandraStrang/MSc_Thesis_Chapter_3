@@ -1,6 +1,5 @@
 
 # Model to predict the number of breeding pairs of Adelie penguins using the area of guano for four colonies in the Ross Sea
-# Robb is smelly
 # Cleaned version
 # Creator: Alexandra Strang
 # Created: 8/12/2023
