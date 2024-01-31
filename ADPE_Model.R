@@ -2,7 +2,7 @@
 # Model to predict the number of breeding pairs of Adélie penguins using the area of guano for four colonies in the Ross Sea
 # Cleaned version
 # Creator: Alexandra Strang
-# Created: 8/12/2023
+# Last edited: 31/01/2023
 
 sessionInfo() # for citing package versions
 citation() # for citing packages
@@ -11,7 +11,7 @@ citation() # for citing packages
 # Read in data
 #####################################################################################################################
 
-X5_masterdata <- read.csv("C:/Users/astra/OneDrive - University of Canterbury/Adelie penguin project/Data/Models/Model_scripts/5.0_masterdata.csv")
+X5_masterdata <- read.csv("5.0_masterdata.csv")
 View(X5_masterdata)
 head(X5_masterdata)
 
