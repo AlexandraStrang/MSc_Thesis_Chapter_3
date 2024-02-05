@@ -1,7 +1,7 @@
 
 # Plots exploring the trends in guano area of four Adélie penguin colonies extracted from VHR imagery over 2009-2021
 # Creator: Alexandra Strang
-# Last edited: 05/02/2024
+# Last edited: 06/02/2024
 
 sessionInfo() # for citing package versions
 citation() # for citing packages
