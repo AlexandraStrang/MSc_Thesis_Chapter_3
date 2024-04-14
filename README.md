@@ -1,5 +1,5 @@
 # Chapter 3: Advancing efficiencies in remote sensing of Ross Sea Adélie penguin populations
-A chapter belonging to my Master's Thesis submitted for the degree Master of Science at the University of Canterbury, Christchurch, New Zealand. 
+A chapter belonging to my Master's thesis submitted for the degree Master of Science at the University of Canterbury, Christchurch, New Zealand. 
 
 Submitted: 16/02/2024
 
