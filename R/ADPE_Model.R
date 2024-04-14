@@ -244,13 +244,13 @@ New.model.resids # Plot not used in thesis
 library(lme4)
 
 # LMM with site effect using REML
-lmm1 <- lme4::lmer(logGuano_area ~ logBP + (1|Site_ID), data = Dataset.5.2) # Note: GA and BP are flipped
+lmm1 <- lme4::lmer(logGuano_area ~ logBP + (1|Site_ID), data = Dataset.5.2)
 
 anova(lmm1) # just looks at fixed effects
 summary(lmm1) # variances came from here
 
 # Compare LMM to LM using ML method
-lmm2 <- lme4::lmer(logGuano_area ~ logBP + (1|Site_ID), REML = FALSE, data = Dataset.5.2) # Note: GA and BP are flipped
+lmm2 <- lme4::lmer(logGuano_area ~ logBP + (1|Site_ID), REML = FALSE, data = Dataset.5.2)
 
 anova(lmm2) # just looks at fixed effects
 summary(lmm2)
