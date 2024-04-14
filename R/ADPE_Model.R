@@ -2,7 +2,7 @@
 # Model to predict the number of breeding pairs of Adélie penguins using the area of guano for four colonies in the Ross Sea
 # Cleaned version
 # Creator: Alexandra Strang
-# Last edited: 31/01/2024
+# Last edited: 15/04/2024
 
 sessionInfo() # for citing package versions
 citation() # for citing packages
@@ -21,7 +21,7 @@ Dataset.5.0 <- X5_masterdata
 colours<-c(BIRD="blue",CROZ="red",INEX="orange",ROYD="green")
 
 #####################################################################################################################
-# Log transform guano area and breeding pairs (BP)
+# Log transform guano area (GA) and breeding pairs (BP)
 #####################################################################################################################
 
 Dataset.5.0$logGuano_area <- log(Dataset.5.0$Guano_area)
@@ -40,7 +40,7 @@ View(Dataset.5.2)
 # 1. What factors influence the prediction of breeding pairs using guano area
 #####################################################################################################################
 
-# Use guano area (GA) as the dependent variable to reflect how the data are generated in the system
+# Use GA as the dependent variable to reflect how the data are generated in the system
 
 # Linear model with GA as dependent variable and BP as the predictor variable
 
