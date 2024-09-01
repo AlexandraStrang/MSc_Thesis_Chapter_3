@@ -11,11 +11,11 @@ citation() # for citing packages
 # Read in data
 #####################################################################################################################
 
-X5_masterdata <- read.csv("5.0_masterdata.csv")
-View(X5_masterdata)
-head(X5_masterdata)
+masterdata <- read.csv("ADPE_masterdata.csv")
+View(masterdata)
+head(masterdata)
 
-Dataset.5.0 <- X5_masterdata
+Dataset.5.0 <- masterdata
 
 # Add colour to sites 
 colours<-c(BIRD="blue",CROZ="red",INEX="orange",ROYD="green")
@@ -238,8 +238,10 @@ New.model.resids <- ggplot(ds4, aes(x=fitted, y=resid, colour = Colony, fill = C
 New.model.resids # Plot not used in thesis
 
 #####################################################################################################################
-# Investigate spatial autocorrelation with linear mixed-effect model (LMM) that includes site as a random effect
+# Investigate spatial autocorrelation
 #####################################################################################################################
+
+# Account for repeated measures within a site with linear mixed-effect model (LMM) that includes site as a random effect
 
 library(lme4)
 
@@ -373,7 +375,7 @@ vif(lm.GA.b) # both under 2.0
 AIC(New.model, lm.GA.b) # over fit? due to low sample size try AICc
 AICc(New.model, lm.GA.b) # model without slope better
 
-# CAN'T USE - Candidate model with northness and slope (have to remove northness)
+# CAN'T USE REMOVE - Candidate model with northness and slope (have to remove northness)
 lm.GA.c <- lm(Dataset.5.4$logGuano_area ~ Dataset.5.4$logBP + Dataset.5.4$Northness + Dataset.5.4$Slope)
 
 summary(lm.GA.c)
@@ -398,9 +400,9 @@ vif(lm.GA.e) # all under 2.0
 
 # CAN'T USE - Candidate model with PAR and northness (predictors correlated)
 lm.GA.f <- lm(Dataset.5.4$logGuano_area ~ Dataset.5.4$logBP + Dataset.5.4$PAR + Dataset.5.4$Northness)
+AIC(New.model, lm.GA.e) # model without PAR and slope better
+AICc(New.model, lm.GA.e) # model without PAR and slope better
 
-summary(lm.GA.f)
-vif(lm.GA.f) # all above 2.0
 
 #####################################################################################################################
 # 2. How well can we estimate Guano area and BP relationship at a new site (cross-validation)
