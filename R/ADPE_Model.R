@@ -375,7 +375,7 @@ vif(lm.GA.b) # both under 2.0
 AIC(New.model, lm.GA.b) # over fit? due to low sample size try AICc
 AICc(New.model, lm.GA.b) # model without slope better
 
-# CAN'T USE REMOVE - Candidate model with northness and slope (have to remove northness)
+# CAN'T USE - Candidate model with northness and slope (have to remove northness)
 lm.GA.c <- lm(Dataset.5.4$logGuano_area ~ Dataset.5.4$logBP + Dataset.5.4$Northness + Dataset.5.4$Slope)
 
 summary(lm.GA.c)
