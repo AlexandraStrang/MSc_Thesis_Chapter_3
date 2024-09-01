@@ -13,7 +13,7 @@ This chapter explored the use of Very High-Resolution satellite imagery (VHR) fo
   3) What percent change in breeding pairs between years will result in a sufficiently large change in guano area that we can be confident that colony change has        actually occurred? In other words, how sensitive is observing guano area for detecting population change?
 
 ## Contains:
-This repository contains the R code and data required for completing the analysis in 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=614fP9gAAAAJ&citation_for_view=614fP9gAAAAJ:VLnqNzywnoUC'.
+This repository contains the R code and data required for completing the analysis in https://scholar.google.com/citations?view_op=view_citation&hl=en&user=614fP9gAAAAJ&citation_for_view=614fP9gAAAAJ:VLnqNzywnoUC
 
 ## Contact:
 alexandra.strang@pg.canterbury.ac.nz with any questions.
